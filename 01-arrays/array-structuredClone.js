@@ -1,5 +1,5 @@
 
-const state = [
+const superHeroes = [
     {
         id: 1,
         name: 'Batman'
@@ -18,4 +18,10 @@ const state = [
     },
 ];
 
+
+const superHeroesCopy = structuredClone(superHeroes);
+superHeroesCopy[0].name = 'Spiderman';
+
+
 console.table(superHeroes);
+console.table(superHeroesCopy);
