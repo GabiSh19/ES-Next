@@ -18,4 +18,15 @@ const state = [
     },
 ];
 
-console.table(superHeroes);
+const index = 1;
+const newName = 'Green Lantern';
+
+const newState = state.map ( (hero,i) => {
+
+    if ( i === index ) {
+        hero.name = newName;
+    }
+
+    return hero;
+})
+    
